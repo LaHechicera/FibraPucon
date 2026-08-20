@@ -12,7 +12,7 @@ const PLANES = [
     destacado: true,
     caracteristicas: [
       '100 Mbps de fibra óptica de alta fidelidad.',
-      'Conexión estable y constante, sin caídas en horas pico.',
+      'Conexión estable y constante, sin caídas en horas de mayor tráfico.',
       'Ideal para teletrabajo, clases online, streaming HD y videollamadas.',
       'Conexión multidispositivo fluida.',
     ],

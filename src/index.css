@@ -1,8 +1,9 @@
 :root {
-  --color-primary: #0b63f6;
-  --color-primary-dark: #0a4fc4;
-  --color-accent: #16c79a;
-  --color-accent-dark: #0fa682;
+  /* Paleta tomada del logo Fibrapucon: índigo/azul y verde fibra */
+  --color-primary: #3e4095;
+  --color-primary-dark: #2e2f70;
+  --color-accent: #00a95a;
+  --color-accent-dark: #058a48;
 
   --color-bg: #ffffff;
   --color-bg-alt: #f5f8fc;
@@ -13,8 +14,8 @@
   --color-text-muted: #64748b;
   --color-heading: #0b1220;
 
-  --color-dark-bg: #0b1220;
-  --color-dark-text: #cbd5e1;
+  --color-dark-bg: #121233;
+  --color-dark-text: #c9c9e6;
 
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 12px 24px -8px rgba(15, 23, 42, 0.18);
@@ -34,6 +35,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 *,
@@ -166,7 +178,7 @@ ul {
 }
 
 .btn-secondary:hover {
-  background: rgba(11, 99, 246, 0.08);
+  background: rgba(62, 64, 149, 0.08);
 }
 
 @media (max-width: 640px) {

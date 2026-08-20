@@ -16,7 +16,7 @@ const PLANES = [
       'Ideal para teletrabajo, clases online, streaming HD y videollamadas.',
       'Conexión multidispositivo fluida.',
     ],
-    ctaLabel: 'Contratar Plan Estrella',
+    ctaLabel: 'Consulta factibilidad',
   },
   {
     id: 'plan-medida',
@@ -29,11 +29,11 @@ const PLANES = [
     destacado: false,
     caracteristicas: [
       'Definición de velocidad y configuración según tus requerimientos reales.',
-      'Atención directa y personalizada con nuestro Gerente de Internet.',
+      'Atención directa y personalizada.',
       'Asesoría técnica para garantizar la mejor cobertura y estabilidad.',
       'Soluciones flexibles para proyectos especiales, empresas y eventos.',
     ],
-    ctaLabel: 'Hablar con el Gerente de Internet',
+    ctaLabel: 'Consulta factibilidad',
   },
 ]
 

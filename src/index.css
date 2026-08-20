@@ -150,7 +150,8 @@ ul {
   transition:
     transform 0.15s ease,
     background-color 0.15s ease,
-    border-color 0.15s ease;
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .btn:active {
@@ -164,11 +165,15 @@ ul {
 
 .btn-primary {
   background: var(--color-accent);
-  color: #04231b;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background: var(--color-accent-dark);
+  background: #ffffff;
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px) scale(1.06);
 }
 
 .btn-secondary {
@@ -179,6 +184,7 @@ ul {
 
 .btn-secondary:hover {
   background: rgba(62, 64, 149, 0.08);
+  transform: translateY(-1px) scale(1.06);
 }
 
 @media (max-width: 640px) {

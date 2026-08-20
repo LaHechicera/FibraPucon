@@ -30,12 +30,12 @@
 .navbar--scrolled {
   background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 91, 170, 0.12);
+  box-shadow: 0 2px 20px rgba(62, 64, 149, 0.12);
 }
 
 /* ---------- Logo ---------- */
 .navbar__logo img {
-  height: 75px;
+  height: 65px;
   width: auto;
   object-fit: contain;
   transition: filter 0.3s ease;
@@ -43,7 +43,7 @@
 
 /* Sombra para que el logo se lea sobre el Hero cuando está transparente */
 .navbar:not(.navbar--scrolled) .navbar__logo img {
-  filter: drop-shadow(0 2px 8px rgba(255, 255, 255, 0.474));
+  filter: drop-shadow(0 2px 8px rgba(7, 7, 7, 0.356));
 }
 
 /* ---------- Links ---------- */
@@ -66,7 +66,7 @@
 }
 
 .navbar--scrolled .navbar__links a {
-  color: #2f2f2f; /* oscuros sobre fondo blanco */
+  color: var(--color-heading); /* oscuros sobre fondo blanco */
 }
 
 .navbar__links a::after {
@@ -81,15 +81,15 @@
 }
 
 .navbar--scrolled .navbar__links a::after {
-  background: #005baa;
+  background: var(--color-primary);
 }
 
 .navbar__links a:hover {
-  color: #d9ecff;
+  color: #d7d8f0;
 }
 
 .navbar--scrolled .navbar__links a:hover {
-  color: #005baa;
+  color: var(--color-primary);
 }
 
 .navbar__links a:hover::after {
@@ -98,8 +98,9 @@
 
 /* ---------- CTA "Portal Cliente" ---------- */
 .navbar__cta {
+  display: inline-block;
   background: #ffffff;
-  color: #005baa !important;
+  color: var(--color-primary) !important;
   padding: 10px 22px;
   border-radius: 6px;
   font-size: 14px !important;
@@ -110,7 +111,7 @@
 }
 
 .navbar--scrolled .navbar__cta {
-  background: #005baa;
+  background: var(--color-primary);
   color: #ffffff !important;
 }
 
@@ -119,14 +120,15 @@
 }
 
 .navbar__cta:hover {
-  background: #e8f2ff !important;
-  color: #005baa !important;
-  transform: translateY(-1px);
+  background: #e6e6f5 !important;
+  color: var(--color-primary) !important;
+  transform: translateY(-1px) scale(1.06);
 }
 
 .navbar--scrolled .navbar__cta:hover {
-  background: #0077d9 !important;
+  background: var(--color-primary-dark) !important;
   color: #ffffff !important;
+  transform: translateY(-1px) scale(1.06);
 }
 
 /* ---------- Hamburguesa ---------- */
@@ -153,7 +155,7 @@
 }
 
 .navbar--scrolled .navbar__hamburger span {
-  background: #2f2f2f;
+  background: var(--color-heading);
 }
 
 .navbar__hamburger.open span:nth-child(1) {
@@ -211,17 +213,17 @@
 
   /* En el menú desplegable (fondo blanco) los links van oscuros */
   .navbar__links a {
-    color: #2f2f2f;
+    color: var(--color-heading);
   }
 
   .navbar__links a::after {
-    background: #005baa;
+    background: var(--color-primary);
   }
 
   .navbar__cta {
     margin-top: 8px;
     display: inline-block;
-    background: #005baa;
+    background: var(--color-primary);
     color: #ffffff !important;
   }
 }

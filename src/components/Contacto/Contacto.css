@@ -1,0 +1,98 @@
+.contacto {
+  background: var(--color-bg-alt);
+}
+
+.contacto__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.contacto__info h2 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.contacto__info p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.contacto__details {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacto__details a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacto__form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contacto__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contacto__field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-heading);
+}
+
+.contacto__field input,
+.contacto__field textarea {
+  font: inherit;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: var(--color-text);
+  resize: vertical;
+}
+
+.contacto__field input:focus,
+.contacto__field textarea:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+  border-color: var(--color-primary);
+}
+
+.contacto__status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contacto__status--error {
+  color: #c0392b;
+}
+
+.contacto__status--success {
+  color: var(--color-accent-dark);
+}
+
+.contacto__submit {
+  margin-top: 4px;
+}
+
+@media (max-width: 860px) {
+  .contacto__inner {
+    grid-template-columns: 1fr;
+  }
+}

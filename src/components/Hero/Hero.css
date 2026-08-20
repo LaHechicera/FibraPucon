@@ -1,0 +1,28 @@
+.hero {
+  padding-block: var(--section-padding-y);
+  background-image: url('../../assets/pucon-puesta-sol-villarrica-volcan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__intro {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hero__description {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.hero__actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
